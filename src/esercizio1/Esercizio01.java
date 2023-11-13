@@ -13,10 +13,10 @@ public class Esercizio01 {
         }
 
         if (number >= 0 && number <= 10) {
-            System.out.println("Number in range");
+            System.out.println("Number in range!");
 
         } else {
-            throw new Exception("Error number not in range");
+            throw new Exception("Error number not in range!");
 
         }
 
