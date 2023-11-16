@@ -8,52 +8,43 @@ Scrivere un oggetto per Integer, Double e Character e fare Unboxing*/
 
 public class Esercizio06 {
     public static void main(String[] args) {
-        sumOfInt();
-        chacharInput();
-        integerInput();
-        characterInput();
-        valuePrimitive();
-        valueObj();
+        sumOfInt(5, 5 );
+        chacharInput('A');
+        integerInput(10, 10);
+        characterInput('M');
+        valuePrimitive(12, 11.5, 'S');
+        valueObj(13, 20.2, 'D');
 
     }
 
-    public static void sumOfInt(){
-        int number1 = 5;
-        int number2 = 5;
-        int sum = number1 + number2;
+    public static void sumOfInt(int number, int number2){
+        int sum = number + number2;
         System.out.println("The sum int is = " + sum);
     }
-    public static void chacharInput() {
-        char ch = 'S';
+    public static void chacharInput(char ch) {
         System.out.println("The char is = " + ch);
     }
-    public static void integerInput(){
-        Integer number1 = 10;
-        Integer number2 = 10;
-        Integer sum = number1 + number2;
+    public static void integerInput(Integer number, Integer number2){
+        Integer sum = number + number2;
         System.out.println("The sum Integer is = " + sum);
     }
-    public static void characterInput(){
-      Character ch = 'M';
+    public static void characterInput(Character ch){
         System.out.println("The Character is = " + ch);
     }
-    public static void valuePrimitive(){
-        Integer number1= Integer.valueOf(40);
-        Double numberDouble = Double.valueOf(3.556);
-        Character ch1 = Character.valueOf('S') ;
+    public static void valuePrimitive(int number, double numDouble, char ch){
+        Integer number1= Integer.valueOf(number);
+        Double numberDouble = Double.valueOf(numDouble);
+        Character ch1 = Character.valueOf(ch) ;
         System.out.println("The value of primitive to object in Integer is = " + number1);
-        System.out.println("The value of primitive to object in Double is = " + numberDouble);
-        System.out.println("The value of primitive to object in Character is = " + ch1);
+        System.out.println("The value of primitive to object in Double is = " + numDouble);
+        System.out.println("The value of primitive to object in Character is = " + ch);
     }
-    public static void valueObj(){
-        Integer number = 10;
+    public static void valueObj(Integer number, Double numDouble, Character ch){
         int numInt = number;
-        Double number1 = 3.4;
-        double numDouble = number1;
-        Character ch = 'M';
+        double number1 = numDouble;
         char character = ch;
         System.out.println("The value of object to primitive in Integer is = " + numInt);
-        System.out.println("The value of object to primitive in Double is = " + numDouble );
+        System.out.println("The value of object to primitive in Double is = " + number1 );
         System.out.println("The value of object to primitive in Character is = " + character );
 
 
