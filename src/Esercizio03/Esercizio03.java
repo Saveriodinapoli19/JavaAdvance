@@ -8,15 +8,14 @@ public class Esercizio03 {
     }
 
     public static boolean division(int number, int divisor) throws Exception {
-
-        if (divisor != 0) {
-           int result = number / divisor;
-            throw new ArithmeticException("result");
-
-        } else {
-            System.out.println("The number : " + number + " is not divisible by zero");
+        try {
+            int result = number / divisor;
+            if (divisor != 0) {
+                System.out.println(result);
+            }
+        }catch (ArithmeticException e){
+            throw new ArithmeticException("The number : " + number + " is not divisible by zero");
         }
         return false;
     }
-
 }
