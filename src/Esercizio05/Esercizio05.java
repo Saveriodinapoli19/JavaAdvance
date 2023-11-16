@@ -21,7 +21,7 @@ public class Esercizio05 {
             throw new ArithmeticException("Error");
         }
 
-
+//non so se è fatto bene e se ho seguito la traccia, ma vorrei sapere se il modo usato è corretto.
 
         return false;
     }
